@@ -10,6 +10,7 @@
 		3CB590271C356E0B002B9548 /* SharedUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB590261C356E0B002B9548 /* SharedUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB5902E1C356E0B002B9548 /* SharedUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB590231C356E0B002B9548 /* SharedUtilities.framework */; };
 		3CB590331C356E0B002B9548 /* SharedUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB590321C356E0B002B9548 /* SharedUtilitiesTests.swift */; };
+		3CB5903E1C356EA7002B9548 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5903D1C356EA7002B9548 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3CB5902D1C356E0B002B9548 /* SharedUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB590321C356E0B002B9548 /* SharedUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUtilitiesTests.swift; sourceTree = "<group>"; };
 		3CB590341C356E0B002B9548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB5903D1C356EA7002B9548 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				3CB590261C356E0B002B9548 /* SharedUtilities.h */,
 				3CB590281C356E0B002B9548 /* Info.plist */,
+				3CB5903D1C356EA7002B9548 /* Strings.swift */,
 			);
 			path = SharedUtilities;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB5903E1C356EA7002B9548 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		3CB590381C356E0B002B9548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.iandundas.SharedUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3CB590391C356E0B002B9548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
