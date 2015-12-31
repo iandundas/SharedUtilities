@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension String{
+public extension String{
     
-    static func random(length length: Int) -> String {
+    public static func random(length length: Int) -> String {
         let alphabet = "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         let upperBound = UInt32(alphabet.characters.count)
         return String((0..<length).map { _ -> Character in
